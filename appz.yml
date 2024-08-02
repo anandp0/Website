@@ -1,7 +1,7 @@
 app:
-  name: eCloudControl.com
+  name: mariadb
   code: ECSWEB
-  notify: appzdev@cloudbourne.co
+  notify: apeethambaran@ecloudcontrol.com
 
 build:
   version: 3.0
@@ -11,7 +11,7 @@ build:
   image_template: wordpress-6.2
 
 deploy:
-  context: ecloudcontrol/DEV
+  context: anandp0/DEV
   type: statefulset
   ingress: none
   replicas: 1
@@ -47,5 +47,5 @@ properties:
      vault: SITE_PRIVATE_KEY
   SITE_CERT: 
      vault: SITE_CERT
-  revision : 17
+  revision : 1
        
